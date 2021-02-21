@@ -599,3 +599,5 @@ pre tt:after {
   }
 }
 `
+
+export default GlobalStyle
