@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import { H1 } from '../Heading'
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
@@ -14,9 +15,6 @@ const Inner = styled.div`
     padding: 1.45rem 1.0875rem;
     `
 
-const H1 = styled.h1`
-  margin: 0px;
-`
 
 const StyledLink = styled(Link)`
   color: white;
