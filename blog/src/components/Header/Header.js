@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import { H1 } from '../Heading'
+import { Section } from '../Section'
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
@@ -27,11 +28,18 @@ const StyledLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <Outer>
     <Inner>
-      <H1>
-        <StyledLink to="/">
-          {siteTitle}
-        </StyledLink>
-      </H1>
+      <Section Flex>
+        <Section width={11/12}>
+          <H1>
+            <StyledLink to="/">
+              {siteTitle}
+            </StyledLink>
+          </H1>
+        </Section>
+        <Section width={1/12}>
+          Search
+        </Section>
+      </Section>
     </Inner>
   </Outer>
 )
