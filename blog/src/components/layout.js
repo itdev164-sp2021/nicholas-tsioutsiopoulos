@@ -12,8 +12,8 @@ import styled, { ThemeProvider } from 'styled-components'
 import { Gray } from '../themes/Gray'
 import { Header } from "./Header"
 import GlobalStyle from './GlobalStyle'
-import { Main } from '../Main'
-import { Footer } from '../Footer'
+import { Main } from './Main'
+import { Footer } from './Footer'
 
 const Content = styled.div`
   margin: 0 auto;
