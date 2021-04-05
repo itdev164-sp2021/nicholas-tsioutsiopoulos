@@ -1,12 +1,14 @@
 import { Link } from "gatsby"
 import { H1 } from '../Heading'
+import { Search } from 'styled-icons/feather'
+import { IconButton } from '../Button'
 import { Section } from '../Section'
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
 
 const Outer = styled.header`
-    background: ${props => props.theme.header.backgroundColor};
+    background: ${({ theme }) => theme.variants.header.primary.backgroundColor};
     margin-bottom: 1.45rem;
     `
 
@@ -28,7 +30,7 @@ const StyledLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <Outer>
     <Inner>
-      <Section Flex>
+      <Section flex>
         <Section width={11/12}>
           <H1>
             <StyledLink to="/">
@@ -37,7 +39,7 @@ const Header = ({ siteTitle }) => (
           </H1>
         </Section>
         <Section width={1/12}>
-          Search
+          <IconButton icon={<Search />} variant='contrast' />
         </Section>
       </Section>
     </Inner>
