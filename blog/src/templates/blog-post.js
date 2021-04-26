@@ -26,6 +26,11 @@ export const pageQuery = graphql`
                 html
               }
             }
+            heroImage {
+                fluid(maxWidth: 960) {
+                    src
+                }
+            }
         }
     }
     `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Search } from 'styled-icons/feather'
-import mainHeaderImage rom './images/react.png'
+import mainHeaderImage from './images/react.png'
 
 const images = {
     mainHeaderImage
